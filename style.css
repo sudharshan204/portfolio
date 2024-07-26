@@ -178,3 +178,39 @@ ul {
     justify-content: space-evenly;
     align-items: center;
 }
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr; /* Stack items in single column */
+    }
+
+    .margin {
+        margin: 2rem; /* Responsive margin for smaller screens */
+    }
+
+    .margin button {
+        padding: 0.5rem 1.5rem; /* Smaller button size on smaller screens */
+    }
+    
+    ul {
+        text-align: center;
+    }
+
+    li {
+        float: none; /* Stack navigation items vertically */
+        display: inline-block;
+    }
+
+    li a {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Reduce font size for very small screens */
+    }
+
+    .margin button {
+        width: 100%; /* Full-width button for smaller screens */
+    }
+}
